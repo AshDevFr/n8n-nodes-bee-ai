@@ -1,48 +1,87 @@
-![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
+# n8n-nodes-bee-ai
 
-# n8n-nodes-starter
+This is an n8n community node. It lets you use Bee AI in your n8n workflows.
 
-This repo contains example nodes to help you get started building your own custom integrations for [n8n](https://n8n.io). It includes the node linter and other dependencies.
+Bee is a personal AI that transforms your conversations, tasks, places and more into summaries, personal insights and timely reminders.
 
-To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
+[n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
-If you would like your node to be available on n8n cloud you can also [submit your node for verification](https://docs.n8n.io/integrations/creating-nodes/deploy/submit-community-nodes/).
+[Installation](#installation)  
+[Operations](#operations)  
+[Credentials](#credentials) <!-- delete if no auth needed -->  
+[Compatibility](#compatibility)  
+[Usage](#usage) <!-- delete if not using this section -->  
+[Resources](#resources)
 
-## Prerequisites
+## Installation
 
-You need the following installed on your development machine:
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
-* [git](https://git-scm.com/downloads)
-* Node.js and npm. Minimum version Node 20. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
-* Install n8n with:
-  ```
-  npm install n8n -g
-  ```
-* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+## Operations
 
-## Using this starter
+### Conversations
 
-These are the basic steps for working with the starter. For detailed guidance on creating and publishing nodes, refer to the [documentation](https://docs.n8n.io/integrations/creating-nodes/).
+- **List conversations**  
+  Retrieve summaries of all conversations for a user, with paging support.
+- **Get a conversation**  
+  Retrieve details of a specific conversation by its ID.
+- **Delete a conversation**  
+  Delete a specific conversation by its ID.
+- **End a conversation**  
+  Mark a specific conversation as ended.
+- **Retry a conversation**  
+  Retry a specific conversation.
 
-1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
-2. Clone your new repo:
-   ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
-   ```
-3. Run `npm i` to install dependencies.
-4. Open the project in your editor.
-5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
-6. Update the `package.json` to match your details.
-7. Run `npm run lint` to check for errors or `npm run lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
-10. Update the LICENSE file to use your details.
-11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+### Todos
 
-## More information
+- **List todos**  
+  Retrieve all todos for a user, with paging support.
+- **Get a todo**  
+  Retrieve details of a specific todo by its ID.
+- **Create a todo**  
+  Add a new todo for a user (optionally with an alarm time).
+- **Update a todo**  
+  Update the text, completion status, or alarm time of a specific todo.
+- **Delete a todo**  
+  Delete a specific todo by its ID.
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+### Facts
 
-## License
+- **List facts**  
+  Retrieve all facts for a user, with paging and optional filtering by confirmation status.
+- **Get a fact**  
+  Retrieve details of a specific fact by its ID.
+- **Create a fact**  
+  Add a new fact for a user.
+- **Update a fact**  
+  Update the text or confirmation status of a specific fact.
+- **Delete a fact**  
+  Delete a specific fact by its ID.
 
-[MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+### Locations
+
+- **List locations**  
+  Retrieve all locations for a user, with paging and optional filtering by conversation ID.
+
+## Credentials
+
+BeeAI API
+
+The BeeAI API is the only authentication method available for this node. You can find your API key in the [Bee AI Developer Dashboard](https://developer.bee.computer/keys).
+
+## Compatibility
+
+This node has been tested with the following versions of N8N.
+
+- N8N 1.99.1
+
+## Usage
+
+- Install the BeeAI node
+- Enter your BeeAI API key
+- Choose the operation you want to perform
+
+## Resources
+
+- [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
+- [Bee AI Developer Documentation](https://developer.bee.computer/)

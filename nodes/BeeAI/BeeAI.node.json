@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-base.beeai",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["AI"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://developer.bee.computer/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://developer.bee.computer/"
+			}
+		]
+	}
+}

@@ -2,7 +2,7 @@
 	"node": "n8n-nodes-base.beeai",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["AI", "Development", "Developer Tools"],
+	"categories": ["Development", "Developer Tools"],
 	"resources": {
 		"credentialDocumentation": [
 			{

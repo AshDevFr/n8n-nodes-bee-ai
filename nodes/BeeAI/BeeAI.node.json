@@ -2,16 +2,16 @@
 	"node": "n8n-nodes-base.beeai",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Development", "Developer Tools"],
+	"categories": ["AI", "Development", "Developer Tools"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "http://httpbin.org/#/Auth/get_bearer"
+				"url": "https://developer.bee.computer/"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "http://httpbin.org/"
+				"url": "https://developer.bee.computer/"
 			}
 		]
 	}

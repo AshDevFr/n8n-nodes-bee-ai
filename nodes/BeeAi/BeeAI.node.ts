@@ -23,7 +23,7 @@ export class BeeAI implements INodeType {
 		usableAsTool: true,
 		credentials: [
 			{
-				name: 'beeaiApi',
+				name: 'beeAIApi',
 				required: true,
 			},
 		],

@@ -1,14 +1,15 @@
 import {
-	IAuthenticateGeneric,
+	IAuthenticateGeneric, Icon,
 	// ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 } from 'n8n-workflow';
 
 export class BeeAIApi implements ICredentialType {
-	name = 'beeaiApi';
+	name = 'beeAIApi';
 	displayName = 'BeeAI API';
 	documentationUrl = 'https://developer.bee.computer';
+	icon: Icon = 'file:BeeAI.svg';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'API key',

@@ -1,5 +1,5 @@
 import { INodeProperties } from 'n8n-workflow';
-import { paginationProperty } from './BeeAIAPISharedFilelds';
+import { paginationProperty } from './BeeAIAPISharedFields';
 
 // When the resource `facts` is selected, this `operation` parameter will be shown.
 export const factOperations: INodeProperties[] = [

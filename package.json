@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-bee-ai",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "BeeAI nodes for n8n",
 	"keywords": [
 		"n8n-community-node-package",
@@ -39,7 +39,8 @@
 			"dist/credentials/BeeAIApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/BeeAI/BeeAI.node.js"
+			"dist/nodes/BeeAI/BeeAI.node.js",
+      "dist/nodes/HttpBin/HttpBin.node.js"
 		]
 	},
 	"devDependencies": {
